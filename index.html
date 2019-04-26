@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Color palette</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section>
+            <label for="color-select">Choose a harmony:</label>
+            <select id="color-select" onchange="changeHarmony(this)">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Analogous">Analogous</option>
+                    <option value="Monochromatic">Monochromatic</option>
+                    <option value="Triad">Triad</option>
+                    <option value="Complementary">Complementary</option>
+                    <option value="Compound">Compound</option>
+                    <option value="Shades">Shades</option>
+                </select>
+            <label for="colorWell">Pick a color:</label>
+            <input type="color" value="" id="colorWheel">
+    </section>
+    <section id="boxes">
+    <div class="box" id='box4'><p class="hex4">HEX Code</p></div>
     
+    <div class="box" id='box2'><p class="hex2">HEX Code</p></div>
+    
+    <div class="box" id="box1"><p class="hex1">HEX Code</p></div>
+    
+    <div class="box" id='box3'><p class="hex3">HEX Code</p></div>
+    
+    <div class="box" id='box5'><p class="hex5">HEX Code</p></div>
+    
+    </section>
+<script src="js.js"></script>
 </body>
 </html>
